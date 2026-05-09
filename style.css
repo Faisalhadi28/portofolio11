@@ -231,6 +231,117 @@ h1 .purple { color: var(--purple-light); }
   transition: background .2s, transform .15s;
 }
 
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media (max-width: 992px) {
+
+  nav {
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  #home {
+    flex-direction: column;
+    text-align: center;
+    padding: 120px 20px 40px;
+  }
+
+  .hero-img,
+  .hero-ring,
+  .hero-glow {
+    position: relative;
+    right: auto;
+    top: auto;
+    transform: none;
+    margin: 30px auto 0;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+
+/* =========================
+   RESPONSIVE MOBILE
+========================= */
+@media (max-width: 600px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .btn-cv {
+    font-size: .75rem;
+    padding: 8px 14px;
+  }
+
+  #home {
+    padding: 110px 16px 40px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-img {
+    width: 260px;
+    height: 260px;
+  }
+
+  .hero-ring {
+    width: 260px;
+    height: 260px;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 70px 20px;
+  }
+
+  .float-badge {
+    display: none; /* biar ga berantakan di HP */
+  }
+}
+
+
+
 .btn-primary:hover { background: var(--purple-light); transform: translateY(-1px); }
 
 .btn-outline {
